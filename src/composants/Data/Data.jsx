@@ -1,6 +1,6 @@
 import cnn from "../../assets/images/cnn.png"
 import times from "../../assets/images/times.png"
-import image from "../../assets/images/img-post.png"
+import photo from "../../assets/images/img-post.png"
 import twitter from "../../assets/images/twitter-logo.png"
 
 export const Data = [
@@ -38,7 +38,7 @@ export const Data = [
                     details3:"2h"
                 },
                 text:"Gardening boomed during the pandemic. Six Black writers share how it has helped them re-establish, and reimagine, a connection to cultivation and the land.",
-                image: image
+                image: photo
             },
             actions:{
                 action1:19,

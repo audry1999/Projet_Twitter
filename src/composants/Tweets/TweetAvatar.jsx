@@ -1,9 +1,9 @@
-import cnn from "../../assets/images/cnn.png"
-export default function TweetAvatar (){
+
+export default function TweetAvatar (props){
 
     return (
         <div  className='tweet-avatar'>
-            <img src={cnn} />    
+            <img src={props.avatarphoto} />    
 
         </div>
 

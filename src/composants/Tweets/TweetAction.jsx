@@ -1,12 +1,9 @@
-import reply from "../../assets/Icons/Reply.svg"
-export default function TweetAction (){
-    console.log();
+
+export default function TweetAction (props){
     return (
         <div className="tweet-action">
-              <img src={reply} />
-              <img src={reply} />
-              <img src={reply} />
-              <img src={reply} />
+              <img src={props.image} />
+              <span>{props.act}</span>
             
         </div>
     )

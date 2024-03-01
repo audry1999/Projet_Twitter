@@ -1,8 +1,8 @@
-export default function TweetText (){
+export default function TweetText (props){
 
     return ( 
         <div className="tweet-text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate eligendi laudantium a libero neque sit, ab ex itaque recusandae labore repellendus laboriosam quo perferendis cum, tempore dignissimos, sed necessitatibus quasi?</p>
+           {props.texte}
         </div>
     )
 }
