@@ -193,16 +193,3 @@ body{
     justify-content: center;
     gap: 20px;
 }
-.menu ul{
-    display: flex;
-    justify-content: right;
-    flex-direction: column;
-    gap: 5px;
-    list-style: none;
-   
-}
-.menu ul li {
-    color: #D9D9D9;
-    font-size: 1rem;
-}
-

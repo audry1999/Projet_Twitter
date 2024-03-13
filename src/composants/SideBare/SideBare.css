@@ -1,0 +1,35 @@
+*{
+    text-decoration: none;
+}
+.sidebar{
+    width: 20%;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+    height: 100vh;
+}
+.sidebar-content{
+   height: 85%;
+}
+.page-title-sidebare{
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'inter', sans-serif;
+}
+.side-nav{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.user{
+    background-color: rgb(11, 8, 7);
+    display: flex;
+}
+.content-footer{
+    font-family: 'inter' sans-serif;
+    /* color: rgb(250, 247, 247); */
+    font-size: 1rem;
+}
+
+

@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+// import { Form, Link } from "react-router-dom"
+import { Link } from 'react-router-dom'
 import Twitter from '../../assets/Icons/Twitter.svg'
 import Homefill from '../../assets/Icons/Home-Fill.svg'
 import Explore from '../../assets/Icons/Explore.svg'
@@ -8,65 +9,87 @@ import Bookmarks from '../../assets/Icons/Bookmarks.svg'
 import List from '../../assets/Icons/Lists.svg'
 import ProfilFile from '../../assets/Icons/Profile-Fill.svg'
 import More from '../../assets/Icons/More.svg'
-import Button from '../../assets/Icons/Tweet-Buton-M.svg'
+// import Button from '../../assets/Icons/Tweet-Buton-M.svg'
+ import Profil from "../../assets/Profile-Photo.svg"
+import Private from "../../assets/Icons/Private.svg"
+import './SideBare.css'
 
-
-export default function SideBare(props) {
-    console.log(props);
+export default function SideBare() {
     return (
-   
-                <div className="menu">
-                    <ul>
-                        <li>
-                        <img src={Twitter} />
-                        </li>
+        <div className="sidebar">
+            <div className="sidebar-content">
+                <Link to="/" />
+                <img src={Twitter} alt="" />
+                <Link />
 
-                        <li>
-                            <img src={Homefill} /> <Link to="/">Home</Link>
-                           
-                         
-                        </li> 
-                      <li>
-                            <img src={Explore} /> 
-                            <Link to="/contact">Explore</Link>
- 
-                        </li>
-                        <li> 
-                            <img src={Notification} /> 
-                            <Link to="/contact">Notification</Link>
- 
-                        </li>
-                        <li>
-                            <img src={Message} />
-                            <Link to="/contact">Message</Link>
-
-                        </li>
-                        <li>
-                            <img src={Bookmarks} /> 
-                            <Link to="/contact">Bookmarks</Link>
-
-                        </li>
-                        <li>
-                            <img src={List} /> 
-                            <Link to="/contact">Lists</Link>
-
-                        </li>
-                        <li>
-                            <img src={ProfilFile} /> 
-                            <Link to="/contact">Profile</Link>
-
-                        </li>
-                        <li>
-                            <img src={More} /> 
-                            <Link to="/contact">More</Link>
-
-                        </li>
-
-                        <img src={Button} />
-
-                    </ul>
+                <Link to="/" />
+                <div className='side-nav'>
+                    <img src={Homefill} alt="" />
+                    <div className='page-title-sidebare'>Home</div>
                 </div>
-            
-    )
 
+                <Link />
+                <Link to="/" />
+                <div className='side-nav'>
+                    <img src={Explore} alt="" />
+                    <div className='page-title-sidebare'>Explore</div>
+                </div>
+
+                <Link />
+                <Link to="/" />
+                <div className='side-nav'>
+                    <img src={Notification} alt="" />
+                    <div className='page-title-sidebare'>Notification</div>
+                </div>
+
+                <Link />
+                <Link to="/" />
+                <div className='side-nav'>
+                    <img src={Message} alt="" />
+                    <div className='page-title-sidebare'>Message</div>
+                </div>
+
+                <Link />
+                <Link to="/" />
+                <div className='side-nav'>
+                    <img src={Bookmarks} alt="" />
+                    <div className='page-title-sidebare'>Bookmarks</div>
+                </div>
+
+                <Link />
+                <Link to="/" />
+                <div className='side-nav'>
+                    <img src={List} alt="" />
+                    <div className='page-title-sidebare'>List</div>
+                </div>
+
+                <Link />
+                <Link to="/" />
+                <div className='side-nav'>
+                    <img src={ProfilFile} alt="" />
+                    <div className='page-title-sidebare'>Profile</div>
+                </div>
+
+                <Link />
+                <Link to="/" />
+                <div className='side-nav'>
+                    <img src={More} alt="" />
+                    <div className='page-title-sidebare'>More</div>
+                </div>
+                <Link />
+                <button style={{ width: "90%" }} className='button'>Tweet</button>
+            </div>
+            <div className='user'>
+                <img src={Profil} alt="" />
+            </div>
+            <div className='content-footer'>
+                Bradley Ortiz <span><img src={Private} alt="" /></span>
+                <p>@Bradley</p>
+
+            </div>
+
+        </div>
+    )
 }
+
+
