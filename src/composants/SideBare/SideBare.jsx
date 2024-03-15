@@ -10,7 +10,7 @@ import List from '../../assets/Icons/Lists.svg'
 import ProfilFile from '../../assets/Icons/Profile-Fill.svg'
 import More from '../../assets/Icons/More.svg'
 // import Button from '../../assets/Icons/Tweet-Buton-M.svg'
- import Profil from "../../assets/Profile-Photo.svg"
+import Profil from "../../assets/Profile-Photo.svg"
 import Private from "../../assets/Icons/Private.svg"
 import './SideBare.css'
 
@@ -77,13 +77,13 @@ export default function SideBare() {
                     <div className='page-title-sidebare'>More</div>
                 </div>
                 <Link />
-                <button style={{ width: "90%" }} className='button'>Tweet</button>
+                <button style={{ width: "180px" }} className='button'>Tweet</button>
             </div>
             <div className='user'>
                 <img src={Profil} alt="" />
             </div>
             <div className='content-footer'>
-                Bradley Ortiz <span><img src={Private} alt="" /></span>
+                Bradley Ortiz <span><img src={Private} alt="" />  ...</span>
                 <p>@Bradley</p>
 
             </div>
