@@ -37,6 +37,11 @@
 }
 .trend{
     line-height: 10px; 
+    
+}
+.for{
+    display: flex;
+    justify-content: space-between;
 }
 .trend p{
     color: rgb(205, 205, 201);
@@ -44,3 +49,12 @@
 .trend h3{
     color: rgb(53, 83, 218);
 }
+.ToFolow{
+   display: flex;
+   justify-content:space-between;
+}
+.Tof-text{
+    display: flex;
+    justify-content:space-between;
+    gap: 10px;
+ }

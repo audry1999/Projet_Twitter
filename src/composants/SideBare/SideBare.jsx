@@ -13,80 +13,65 @@ import More from '../../assets/Icons/More.svg'
 import Profil from "../../assets/Profile-Photo.svg"
 import Private from "../../assets/Icons/Private.svg"
 import './SideBare.css'
+import SideBareProfil from './SideBareProfile'
+import Button from '../buttons/Buttons'
+import SideBareAction from './SideBareAction'
 
 export default function SideBare() {
     return (
         <div className="sidebar">
             <div className="sidebar-content">
-                <Link to="/" />
-                <img src={Twitter} alt="" />
-                <Link />
 
-                <Link to="/" />
-                <div className='side-nav'>
-                    <img src={Homefill} alt="" />
-                    <div className='page-title-sidebare'>Home</div>
-                </div>
-
-                <Link />
-                <Link to="/" />
-                <div className='side-nav'>
-                    <img src={Explore} alt="" />
-                    <div className='page-title-sidebare'>Explore</div>
-                </div>
-
-                <Link />
-                <Link to="/" />
-                <div className='side-nav'>
-                    <img src={Notification} alt="" />
-                    <div className='page-title-sidebare'>Notification</div>
-                </div>
-
-                <Link />
-                <Link to="/" />
-                <div className='side-nav'>
-                    <img src={Message} alt="" />
-                    <div className='page-title-sidebare'>Message</div>
-                </div>
-
-                <Link />
-                <Link to="/" />
-                <div className='side-nav'>
-                    <img src={Bookmarks} alt="" />
-                    <div className='page-title-sidebare'>Bookmarks</div>
-                </div>
-
-                <Link />
-                <Link to="/" />
-                <div className='side-nav'>
-                    <img src={List} alt="" />
-                    <div className='page-title-sidebare'>List</div>
-                </div>
-
-                <Link />
-                <Link to="/" />
-                <div className='side-nav'>
-                    <img src={ProfilFile} alt="" />
-                    <div className='page-title-sidebare'>Profile</div>
-                </div>
-
-                <Link />
-                <Link to="/" />
-                <div className='side-nav'>
-                    <img src={More} alt="" />
-                    <div className='page-title-sidebare'>More</div>
-                </div>
-                <Link />
-                <button style={{ width: "180px" }} className='button'>Tweet</button>
+                <SideBareAction
+                    sourceImg={Twitter}
+                    lien="/"
+                />
+                <SideBareAction
+                    sourceImg={Homefill}
+                    texte={"Home"}
+                    lien="/"
+                />
+                <SideBareAction
+                    sourceImg={Explore}
+                    texte={"Explore"}
+                    lien="/"
+                />
+                <SideBareAction
+                    sourceImg={Notification}
+                    texte={"Notification"}
+                    lien="/"
+                />
+                <SideBareAction
+                    sourceImg={Message}
+                    texte={"Message"}
+                    lien="/"
+                />
+                <SideBareAction
+                    sourceImg={Bookmarks}
+                    texte={"Bookmarks"}
+                    lien="/"
+                />
+                <SideBareAction
+                    sourceImg={List}
+                    texte={"List"}
+                    lien="/"
+                />
+                <SideBareAction
+                    sourceImg={ProfilFile}
+                    texte={"Profil"}
+                    lien="/"
+                />
+                <SideBareAction
+                    sourceImg={More}
+                    texte={"More"}
+                    lien="/"
+                />
+                <Button />
             </div>
-            <div className='user'>
-                <img src={Profil} alt="" />
-            </div>
-            <div className='content-footer'>
-                Bradley Ortiz <span><img src={Private} alt="" />  ...</span>
-                <p>@Bradley</p>
-
-            </div>
+            <SideBareProfil
+                profilPhoto={Profil}
+                privatePhoto={Private}
+            />
 
         </div>
     )
